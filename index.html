@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Crime in San Francisco</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/grayscale.css" rel="stylesheet">
+  <link href="css/crimeapp.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">w209-Final Project</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#overview">Overview</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#crime">Crime Trends</a>
+          </li>		  
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#neighborhood">Neighborhood Trends</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#elevation">Elevation Trends</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+      <div class="mx-auto text-center">
+        <h1 class="mx-auto my-0 text-uppercase">Visualizing Crime in San Francisco</h1>
+		<br>
+		<br>
+        <h2 class="text-white-50 mx-auto mt-2 mb-5 text-left">In San Francisco, homelessness and crime have become emergent issues for residents. However, most news stories 
+		                                           (and intuition from spending time in the city) suggest that crime rates are not evenly dispersed throughout. 
+												   Simultaneously, San Francisco is well known for its very hilly topography, with some of the ‘nicer’ neighborhoods 
+												   sitting at the top of the steepest hills. Through this project, we aim to discover the relationship between these elevation 
+												   features and different types of crime.</h2>
+		<br>
+		<br>
+        <a href="#overview" class="btn btn-primary js-scroll-trigger">Get Started</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Overview Section -->
+  <section id="overview" class="about-section">
+    <div class="container">
+      <div class="row">
+          	<p class="text-white-50" style="font-size:150%">
+			  	San Francisco is well known to be a center of technology and innovation, but as the city continually evolves, homelessness and crime have made the city feel 
+				less safe for citizens and tourists alike. San Francisco had the highest per-capita property crime rates in 2017, and has an overall crime rate 3.7 times the 
+				national average. Understanding the drivers of these rates is challenging, as they are symptoms of larger, systemic problems. However, visualizing and engaging 
+				with crime data can allow for trends to be unearthed.
+			</p>
+          	<p class="text-white-50" style="font-size:150%">
+				In building these visualizations, we wanted to explore two main questions. Firstly, as visualization allows for trends in the data to come into focus, what 
+				can we learn from exploring the city’s crime rates over the last several years? Our second goal is a personal one for one group member. For the last three 
+				years, Danielle has lived at the top of one of San Francisco’s famous hills. During daily commute up the hill, she has often pondered if neighborhoods at 
+				higher elevations experience reduced crime rates, simply because perpetrators are reluctant to brave the climbs.
+			</p>
+			<p class="text-white-50" style="font-size:150%">
+				The below visualizations allow users to explore these and other questions about crime rates in San Francisco. They do not intend to provide concrete answers 
+				about drivers of crime but rather to highlight trends that are visible within the data. They are built using Police Department 
+				Incident Reports from San Francisco’s open data portal, which can be accessed 
+				<a href="https://data.sfgov.org/Public-Safety/Police-Department-Incident-Reports-Historical-2003/tmnf-yvry">here.</a>
+			</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Crime Trends Section -->
+  <section id="crime" class="projects-section bg-light">
+    <div class="container">
+
+				<div class="row">
+					<h2>Overview of all crimes recorded in San Francisco between 2013 and 2017 </h2>
+					<div>
+						<p class="text-black" style="font-size:100%">
+							<br>
+							Before any true insights can be gained, it is important to first be oriented to the data. These views answer high level questions. As you engage 
+							with the dashboard, consider the following:
+							<br>
+							<ul style="font-size:100%">
+								<li>
+									How do crime rates differ by neighborhood?
+								</li>
+								<li>
+									How have crime rates changed over time?
+								</li>
+								<li>
+									How does crime frequency change throughout the day?
+								</li>
+							</ul>
+							<br>
+							Using the table (first quadrant) to filter the dashboard allows for deeper investigation into a single year, a single crime type, or a 
+							combination of each.
+							<br>
+						</p>
+					</div>
+					<div>
+						<div class='tableauPlaceholder' id='viz1555601039030' style='position: relative'>
+							<noscript>
+								<a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;MM&#47;MMZWSQ7HX&#47;1_rss.png' style='border: none' /></a>
+							</noscript>
+							<object class='tableauViz'  style='display:none;'>
+								<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+								<param name='embed_code_version' value='3' /> 
+								<param name='path' value='shared&#47;MMZWSQ7HX' /> 
+								<param name='toolbar' value='yes' />
+								<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;MM&#47;MMZWSQ7HX&#47;1.png' />
+								<param name='animate_transition' value='yes' />
+								<param name='display_static_image' value='yes' />
+								<param name='display_spinner' value='yes' />
+								<param name='display_overlay' value='yes' />
+								<param name='display_count' value='yes' />
+							</object>
+						</div>                
+						<script type='text/javascript'>                    
+							var divElement = document.getElementById('viz1555601039030');                    
+							var vizElement = divElement.getElementsByTagName('object')[0];                    
+							vizElement.style.width='1200px';
+							vizElement.style.height='754px';                    
+							var scriptElement = document.createElement('script');                    
+							scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+							vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+						</script>
+					</div>
+				</div>
+  </section>
+  
+  <!-- Neighborhood Section -->
+  <section id="neighborhood" class="neighborhood-section">
+    <div class="container">
+      <div class="row">
+
+					<h2 class="text-white"> Investigating different types of crime by neighborhood</h2>
+					<div>
+						<p class="text-white" style="font-size:100%">
+							<br>
+							After some high level exploration, some initial conclusions may be drawn about which neighborhoods experience disproportionate crime. These views 
+							intend to explore that further. The heatmap immediately draws the eye to more common crime types, across the city as well as in specific 
+							neighborhoods. Using the table (top) to filter the dashboard, you can see exact geographic locations for all crimes in that type, and hovering 
+							over the details (third quadrant) displays further information about each incident.
+							<br>
+							<br>
+							As you engage with this dashboard, consider the following:
+							<ul class="text-white" style="font-size:100%">
+								<li>
+									Which neighborhoods appear to be the most safe? Which appear to be the least?
+								</li>
+								<li>
+									Do some crimes appear more common in specific neighborhoods?
+								</li>
+							</ul>
+							<br>
+						</p>
+					</div>
+					<div>
+						<div class='tableauPlaceholder' id='viz1555602519464' style='position: relative'>
+							<noscript>
+								<a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;YH&#47;YHJGZ4YFK&#47;1_rss.png' style='border: none' /></a>
+							</noscript>
+							<object class='tableauViz'  style='display:none;'>
+							<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+							<param name='embed_code_version' value='3' /> 
+							<param name='path' value='shared&#47;YHJGZ4YFK' /> 
+							<param name='toolbar' value='yes' />
+							<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;YH&#47;YHJGZ4YFK&#47;1.png' /> 
+							<param name='animate_transition' value='yes' />
+							<param name='display_static_image' value='yes' />
+							<param name='display_spinner' value='yes' />
+							<param name='display_overlay' value='yes' />
+							<param name='display_count' value='yes' />
+							</object>
+						</div>                
+						<script type='text/javascript'>                    
+							var divElement = document.getElementById('viz1555602519464');                    
+							var vizElement = divElement.getElementsByTagName('object')[0];                    
+							vizElement.style.width='1200px';vizElement.style.height='754px';                    
+							var scriptElement = document.createElement('script');                    
+							scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+							vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+						</script>
+    </div>
+  </section>
+  
+  <!-- Elevation Section -->
+
+  <section id="elevation" class="projects-section bg-light">
+    <div class="container">
+
+				<div class="row">
+					<h2>Exploring the relationship between crime and elevation</h2>
+					<div>
+						<p class="text-black" style="font-size:100%">
+							<br>
+							While many features and characteristics of a geographical area may contribute to drivers of crime, we intended to explore how elevation 
+							specifically may be correlated. Now that you have investigated neighborhoods of interest, consider the following:
+							<br>
+							<ul style="font-size:100%">
+								<li>
+									What can you learn about the elevation in those neighborhoods?
+								</li>
+								<li>
+									What is the relationship between elevation and crime?
+								</li>
+								<li>
+									Do some crime types appear to be more strongly correlated?
+								</li>
+							</ul>
+							<br>
+						</p>
+					</div>
+					<div>
+						<div class='tableauPlaceholder' id='viz1555602772572' style='position: relative'>
+							<noscript>
+								<a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;20&#47;209Project-FinalConept_v2&#47;ElevationDashboard&#47;1_rss.png' style='border: none' /></a>
+							</noscript>
+							<object class='tableauViz'  style='display:none;'>
+								<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+								<param name='embed_code_version' value='3' /> 
+								<param name='site_root' value='' />
+								<param name='name' value='209Project-FinalConept_v2&#47;ElevationDashboard' />
+								<param name='tabs' value='no' />
+								<param name='toolbar' value='yes' />
+								<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;20&#47;209Project-FinalConept_v2&#47;ElevationDashboard&#47;1.png' /> 
+								<param name='animate_transition' value='yes' />
+								<param name='display_static_image' value='yes' />
+								<param name='display_spinner' value='yes' />
+								<param name='display_overlay' value='yes' />
+								<param name='display_count' value='yes' />
+							</object>
+						</div>                
+						<script type='text/javascript'>                    
+							var divElement = document.getElementById('viz1555602772572');                    
+							var vizElement = divElement.getElementsByTagName('object')[0];                    
+							vizElement.style.width='1200px';vizElement.style.height='754px';                    
+							var scriptElement = document.createElement('script');                    
+							scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+							vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+						</script>
+					</div>
+				</div>
+
+  </section>
+
+  <!-- Signup Section -->
+  <section id="about" class="signup-section">
+    <div class="container">
+      <div class="row">
+		<h2 class="text-white text-center"> Thank you for going through our project! We had fun building it and we hope that you had fun using it. 
+		                        We hope this has been an informative experience for you. Feel free to reach out to us via e-mail with any 
+								questions/comments that you may have.</h2>		
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section bg-black">
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <h4 class="text-uppercase m-0">Dani Salah</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">danisalah@berkeley.edu</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3 mb-md-0">
+
+        </div>
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <h4 class="text-uppercase m-0">Andrew Pouchepanadin</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">apouchepanadin@berkeley.edu</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black small text-center text-white-50">
+    <div class="container">
+      Copyright &copy; Crime in SF 2019
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/grayscale.min.js"></script>
+
+</body>
+
+</html>
